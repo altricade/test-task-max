@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: -apple-system, system-ui, Roboto, Avenir, Helvetica, Arial, sans-serif;
+
+  --breakpoint-card: 58rem;
+
+  --color-page: #25262d;
+  --color-surface: #17181c;
+  --color-accent: #007aff;
+  --color-accent-hover: #007affe6;
+  --color-focus: #007aff99;
+  --color-danger: #f87171;
+  --color-glow-cyan: #0e749066;
+  --color-glow-indigo: #4f46e573;
+  --color-fg: #ffffff;
+  --color-avatar-from: #7fb0ff;
+  --color-avatar-to: #4d7cf2;
+  --color-fg-muted: #ffffffa3;
+  --color-fg-placeholder: #ffffff66;
+  --color-fg-disabled: #ffffff47;
+  --color-fill: #ffffff17;
+  --color-fill-disabled: #ffffff1f;
+  --color-fill-hover: #ffffff0f;
+  --color-border-subtle: #ffffff1a;
+
+  --radius-card: 28px;
+  --radius-button: 20px;
+  --radius-field: 16px;
+
+  --shadow-card: 0 4px 24px 0 #00000014;
+
+  --color-divider: #ffffff0f;
+  --color-selected: #2c2d37;
+  --color-chat: #141414;
+  --color-pattern: #505bc74c;
+  --color-chip: #282c42b2;
+  --color-overlay: #00000080;
+
+  --radius-bubble: 16px;
+
+  --container-sidebar: 24.625rem;
+  --container-thread: 45.75rem;
+  --container-composer: 46.25rem;
+}
+
+@utility bg-bubble-incoming {
+  background-image: linear-gradient(239deg, #3b3f5e 0%, #373a4e 50%, #32343d 100%);
+}
+
+@utility bg-bubble-outgoing {
+  background-image: linear-gradient(239deg, #8849b4 0%, #735acd 50%, #5d6ae5 100%);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-page font-sans text-fg antialiased;
+  }
+}
